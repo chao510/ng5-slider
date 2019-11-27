@@ -1096,8 +1096,12 @@ export class SliderComponent implements OnInit, AfterViewInit, OnChanges, OnDest
         '-ms-transform': translation,
         transform: translation,
       };
-      if (tick.selected && !ValueHelper.isNullOrUndefined(this.viewOptions.getSelectionBarColor)) {
-        tick.style['background-color'] = this.getSelectionBarColor();
+      // if (tick.selected && !ValueHelper.isNullOrUndefined(this.viewOptions.getSelectionBarColor)) {
+      //   tick.style['background-color'] = this.getSelectionBarColor();
+      // }
+      // let tick color won't covered by default selectd color #0db9f0
+      if (tick.selected && !ValueHelper.isNullOrUndefined(this.viewOptions.getTickColor)) {
+        tick.style['background-color'] = this.getTickColor(value);
       }
       if (!tick.selected && !ValueHelper.isNullOrUndefined(this.viewOptions.getTickColor)) {
         tick.style['background-color'] = this.getTickColor(value);

@@ -1,7 +1,6 @@
 {
-  "name": "ng5-slider",
-  "version": "1.2.4",
-  "private": true,
+  "name": "@chao510/ng5-slider-tick-no-selected-color",
+  "version": "1.0.0",
   "description": "Self-contained, mobile friendly slider component for Angular 5+ based on angularjs-slider",
   "keywords": [
     "slider",
@@ -17,6 +16,12 @@
     "ng5"
   ],
   "author": "Piotr Dziwinski",
+  "contributors": [
+    {
+      "author": "Chao Chen",
+      "email": "chaoyu510@gmail.com"
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
